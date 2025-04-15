@@ -25,7 +25,7 @@ public class Postagem {
     private String titulo;
 
     @NotBlank(message = "O atributo texto o Obrigatório!")
-    @Size(min = 100, max = 1000, message = "O texto deve conter no mínimo 100 e no máximo 1000 caracteres")
+    @Size(min = 10, max = 1000, message = "O texto deve conter no mínimo 100 e no máximo 1000 caracteres")
     private String texto;
 
     @UpdateTimestamp
