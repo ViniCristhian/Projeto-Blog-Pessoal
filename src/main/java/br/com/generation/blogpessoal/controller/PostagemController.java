@@ -26,7 +26,7 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/postagens")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public class PostagemContoller {
+public class PostagemController {
     
     @Autowired
     private PostagemRepository postagemRepository;
@@ -65,7 +65,7 @@ public class PostagemContoller {
     }
     
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
 	Optional<Postagem> postagem = postagemRepository.findById(id);
 	
