@@ -126,11 +126,6 @@ Contribuições, sugestões e melhorias são muito bem-vindas! Para colaborar:
 
 ---
 
-## Licença
-
-Este projeto não possui uma licença definida atualmente. Consulte o repositório para atualizações sobre as definições de licença.
-
----
 
 ## Contato
 
