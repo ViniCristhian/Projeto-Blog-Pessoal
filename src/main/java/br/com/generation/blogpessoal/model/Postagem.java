@@ -1,6 +1,7 @@
 package br.com.generation.blogpessoal.model;
 
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -32,7 +33,7 @@ public class Postagem {
     private String texto;
 
     @UpdateTimestamp
-    private LocalDate data;
+    private ZonedDateTime data;
 
     @ManyToOne
     @JsonIgnoreProperties("postagem")
@@ -66,14 +67,7 @@ public class Postagem {
 	this.texto = texto;
     }
 
-    public LocalDate getData() {
-	return data;
-    }
-
-    public void setData(LocalDate data) {
-	this.data = data;
-    }
-
+    
     public Tema getTema() {
 	return tema;
     }
@@ -88,6 +82,14 @@ public class Postagem {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public ZonedDateTime getData() {
+        return data;
+    }
+
+    public void setData(ZonedDateTime data) {
+        this.data = data;
     }
 
 }
